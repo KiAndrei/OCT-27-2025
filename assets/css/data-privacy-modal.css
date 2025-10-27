@@ -1,0 +1,244 @@
+/* Data Privacy Modal Styles - Keep Original Design */
+
+#dataPrivacyModal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#dataPrivacyModalContent {
+    max-width: 700px;
+    max-height: 70vh;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    animation: slideDownFromTop 0.5s ease-out;
+}
+
+#dataPrivacyModal .modal-header {
+    background: white;
+    color: #333;
+    padding: 20px 25px 15px;
+    border-radius: 12px 12px 0 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+#dataPrivacyModal .modal-header h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #5D0E26;
+}
+
+
+#dataPrivacyModal .modal-body {
+    padding: 0;
+    background: white;
+    max-height: calc(70vh - 80px);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent;
+}
+
+#dataPrivacyModal .modal-body::-webkit-scrollbar {
+    width: 6px;
+}
+
+#dataPrivacyModal .modal-body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+#dataPrivacyModal .modal-body::-webkit-scrollbar-thumb {
+    background: #5D0E26;
+    border-radius: 3px;
+}
+
+#dataPrivacyModal .modal-body::-webkit-scrollbar-thumb:hover {
+    background: #8B1538;
+}
+
+#dataPrivacyModal .modal-content-inner {
+    padding: 20px 25px;
+}
+
+#dataPrivacyModal .office-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#dataPrivacyModal .office-logo {
+    width: 50px;
+    height: 50px;
+    background: #5D0E26;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+}
+
+#dataPrivacyModal .office-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+#dataPrivacyModal .office-title {
+    color: #5D0E26;
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+#dataPrivacyModal .office-subtitle {
+    color: #666;
+    margin: 5px 0 0;
+    font-size: 0.85rem;
+}
+
+#dataPrivacyModal .important-notice {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+#dataPrivacyModal .important-notice h4 {
+    color: #5D0E26;
+    margin: 0 0 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+#dataPrivacyModal .important-notice p {
+    margin: 0;
+    color: #555;
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+#dataPrivacyModal .section {
+    margin-bottom: 15px;
+}
+
+#dataPrivacyModal .section h4 {
+    color: #333;
+    margin: 0 0 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+#dataPrivacyModal .section p {
+    margin: 0 0 8px;
+    color: #555;
+    font-size: 0.8rem;
+    line-height: 1.4;
+}
+
+#dataPrivacyModal .section ul {
+    margin: 0 0 8px 15px;
+    color: #555;
+    font-size: 0.8rem;
+    line-height: 1.4;
+}
+
+#dataPrivacyModal .section li {
+    margin-bottom: 4px;
+}
+
+#dataPrivacyModal .consent-section {
+    background: #fff3cd;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    border: 1px solid #ffeaa7;
+}
+
+#dataPrivacyModal .consent-section h4 {
+    color: #856404;
+    margin: 0 0 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+#dataPrivacyModal .consent-section p {
+    margin: 0 0 10px;
+    color: #856404;
+    font-size: 0.8rem;
+    line-height: 1.4;
+}
+
+#dataPrivacyModal .checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#dataPrivacyModal .checkbox-container input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #5D0E26;
+}
+
+#dataPrivacyModal .checkbox-container label {
+    color: #856404;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#dataPrivacyModal .modal-footer {
+    padding: 15px 25px;
+    background: white;
+    border-top: 1px solid #e9ecef;
+    border-radius: 0 0 12px 12px;
+    display: flex;
+    justify-content: center;
+}
+
+#dataPrivacyModal .accept-button {
+    background: #ccc;
+    color: #666;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    cursor: not-allowed;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+#dataPrivacyModal .accept-button:not(:disabled) {
+    background: #5D0E26;
+    color: white;
+    cursor: pointer;
+}
+
+#dataPrivacyModal .accept-button:disabled {
+    background: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+/* Animation */
+@keyframes slideDownFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(-50%);
+    }
+}
